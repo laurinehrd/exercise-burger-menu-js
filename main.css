@@ -1,0 +1,44 @@
+/* barre de navigation */
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: gray;
+  font-family: sans-serif;
+  height: 4rem;
+}
+.menu a{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem;
+  color: white;
+}
+
+/* burger menu */
+.close{
+  display: none;
+}
+
+
+/* media queries */
+@media screen and (max-width: 520px) {
+  .items{
+    display: none;
+  }
+  .icon{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .burger{
+    width: 2rem;
+    height: 0.4rem;
+    background-color: black;
+    margin-bottom: 0.3rem;
+    border-radius: 2rem;
+  }
+  .close{
+    display: none;
+    font-size: 3rem;
+  }
+}
